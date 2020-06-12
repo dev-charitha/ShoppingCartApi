@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using ShoppingCart.DataAccess;
 
 namespace ShoppingCart.Api
 {
@@ -25,6 +27,14 @@ namespace ShoppingCart.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddMemoryCache();
+            services.AddMvc();
+
+            //services.AddDbContext<Context>(cfg=> {
+            //    //cfg.UseSqlServer(Configuration.GetConnectionString("SCConnectionString"));
+            //    //cfg.UseSqlServer(Configuration.GetConnectionString("server=DESKTOP-71FRBFI;Database=ShoppingCartDb;Integrated Security=true;MultipleActiveResultSets=true;"));
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

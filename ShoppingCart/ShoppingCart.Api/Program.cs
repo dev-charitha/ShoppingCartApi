@@ -20,7 +20,16 @@ namespace ShoppingCart.Api
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    webBuilder.ConfigureAppConfiguration(SetupConfiguration);
                     webBuilder.UseStartup<Startup>();
                 });
+
+        private static void SetupConfiguration(WebHostBuilderContext context, IConfigurationBuilder builder)
+        {
+            // Remove the default configuration options
+            builder.Sources.Clear();
+            builder.AddJsonFile("config.json", false, true)
+                .AddEnvironmentVariables();
+        }
     }
 }
