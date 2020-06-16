@@ -1,5 +1,0 @@
-{
-  "ConnectionStrings": {
-    "SCConnectionString": "server=DESKTOP-71FRBFI;Database=ShoppingCartDb;Integrated Security=true;MultipleActiveResultSets=true;"
-  }
-}

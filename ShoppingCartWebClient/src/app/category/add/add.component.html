@@ -1,0 +1,32 @@
+<div class="col-md-12" style="background-color: white;">
+  <form [formGroup]="service.formModel" autocomplete="off">
+    <div class="form-group required">
+      <label>Category Name</label>
+      <input
+        class="form-control"
+        formControlName="CategoryName"
+        (submit)="onSubmit()"
+      />
+      <label
+        class="text-danger"
+        *ngIf="
+          service.formModel.get('CategoryName').touched &&
+          service.formModel.get('CategoryName').errors?.required
+        "
+        >This field is mandatory.</label
+      >
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-8 offset-md-8">
+        <button
+          type="submit"
+          class="btn btn-success"
+          [disabled]="!service.formModel.valid"
+        >
+          Add
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

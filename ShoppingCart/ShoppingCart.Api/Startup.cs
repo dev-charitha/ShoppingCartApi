@@ -10,7 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using ShoppingCart.Api.Services;
+using ShoppingCart.Business;
 using ShoppingCart.DataAccess;
+
 
 namespace ShoppingCart.Api
 {
@@ -27,14 +30,10 @@ namespace ShoppingCart.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton< IRepository, Repository >();
+            services.AddSingleton<ICategories, Categories>();
 
-            services.AddMemoryCache();
-            services.AddMvc();
-
-            //services.AddDbContext<Context>(cfg=> {
-            //    //cfg.UseSqlServer(Configuration.GetConnectionString("SCConnectionString"));
-            //    //cfg.UseSqlServer(Configuration.GetConnectionString("server=DESKTOP-71FRBFI;Database=ShoppingCartDb;Integrated Security=true;MultipleActiveResultSets=true;"));
-            //});
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +43,10 @@ namespace ShoppingCart.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(builder => builder.WithOrigins("http://localhost:4200")
+            .AllowAnyHeader()
+            .AllowAnyMethod());
 
             app.UseRouting();
 
