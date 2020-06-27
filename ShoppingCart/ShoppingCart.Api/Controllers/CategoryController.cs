@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using ShoppingCart.Api.Services;
 using ShoppingCart.Business;
 using ShoppingCart.DataAccess.Models;
 

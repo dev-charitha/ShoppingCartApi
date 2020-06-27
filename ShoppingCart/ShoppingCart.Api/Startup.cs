@@ -10,10 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ShoppingCart.Api.Services;
 using ShoppingCart.Business;
 using ShoppingCart.DataAccess;
-
+using Serilog;
 
 namespace ShoppingCart.Api
 {
@@ -32,6 +31,7 @@ namespace ShoppingCart.Api
             services.AddControllers();
             services.AddSingleton< IRepository, Repository >();
             services.AddSingleton<ICategories, Categories>();
+            services.AddSingleton<IProducts, Products>();
 
             services.AddCors();
         }
@@ -56,6 +56,12 @@ namespace ShoppingCart.Api
             {
                 endpoints.MapControllers();
             });
+
+            //---
+            Log.Debug("You should click the clap button if you found this post useful!");
+            Log.Information("You can clap up to 50 times per post!");
+            Log.Error("You forgot to follow me for more programming made simple articles!");
+            //---
         }
     }
 }

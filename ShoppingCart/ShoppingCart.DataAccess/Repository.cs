@@ -15,15 +15,13 @@ namespace ShoppingCart.DataAccess
             _contextSC = new ContextSC();
         }
 
+        #region Category
         public List<Category> GetCategories() {
             return _contextSC.Categories
                 .OrderBy(p => p.Id)
                 .ToList();
         }
 
-
-        //Create Category
-        //public async Task<ActionResult<TodoItemDTO>> CreateTodoItem(TodoItemDTO todoItemDTO)
         public ActionResult<Category> AddCategories(Category categoryItem)
         {
             var category = new Category
@@ -37,6 +35,16 @@ namespace ShoppingCart.DataAccess
 
             return categoryItem;
         }
+        #endregion
+
+        #region Product
+        public List<Product> GetProducts()
+        {
+            return _contextSC.Products
+                .OrderBy(p => p.Id)
+                .ToList();
+        }
+        #endregion
 
 
     }

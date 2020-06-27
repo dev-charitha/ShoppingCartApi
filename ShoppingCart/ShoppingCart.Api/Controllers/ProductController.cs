@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using ShoppingCart.Api.Services;
+using ShoppingCart.Business;
+using ShoppingCart.DataAccess.Models;
 
 namespace ShoppingCart.Api.Controllers
 {
@@ -14,10 +15,10 @@ namespace ShoppingCart.Api.Controllers
     public class ProductController : ControllerBase
     {
         private ILogger _logger;
-        private IProductsService _service;
+        private IProducts _service;
 
 
-        public ProductController(ILogger<ProductController> logger, IProductsService service)
+        public ProductController(ILogger<ProductController> logger, IProducts service)
         {
             _logger = logger;
             _service = service;
@@ -30,26 +31,26 @@ namespace ShoppingCart.Api.Controllers
             return _service.GetProducts();
         }
 
-        [HttpPost("/api/products")]
-        public ActionResult<Product> AddProduct(Product product)
-        {
-            _service.AddProduct(product);
-            return product;
-        }
+        //[HttpPost("/api/products")]
+        //public ActionResult<Product> AddProduct(Product product)
+        //{
+        //    _service.AddProduct(product);
+        //    return product;
+        //}
 
-        [HttpPut("/api/products/{id}")]
-        public ActionResult<Product> UpdateProduct(string id, Product product)
-        {
-            _service.UpdateProduct(id, product);
-            return product;
-        }
+        //[HttpPut("/api/products/{id}")]
+        //public ActionResult<Product> UpdateProduct(string id, Product product)
+        //{
+        //    _service.UpdateProduct(id, product);
+        //    return product;
+        //}
 
-        [HttpDelete("/api/products/{id}")]
-        public ActionResult<string> DeleteProduct(string id)
-        {
-            _service.DeleteProduct(id);
-            //_logger.LogInformation("products", _products);
-            return id;
-        }
+        //[HttpDelete("/api/products/{id}")]
+        //public ActionResult<string> DeleteProduct(string id)
+        //{
+        //    _service.DeleteProduct(id);
+        //    //_logger.LogInformation("products", _products);
+        //    return id;
+        //}
     }
 }

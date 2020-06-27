@@ -11,5 +11,9 @@ namespace ShoppingCart.DataAccess
         //IEnumerable<Category> GetAllCategory();
         public List<Category> GetCategories();
         public ActionResult<Category> AddCategories(Category categoryItem);
+
+        #region Product
+        public List<Product> GetProducts();
+        #endregion
     }
 }

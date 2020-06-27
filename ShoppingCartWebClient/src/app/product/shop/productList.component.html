@@ -1,0 +1,21 @@
+<div class="row" style="margin-left: 10px;">
+  <tbody style="background-color: red;">
+    <tr *ngFor="let c of categories">
+      <td>{{ c.name }}</td>
+    </tr>
+  </tbody>
+</div>
+<div class="row" style="margin-left: 10px;">
+  <!--<ul>
+    <li *ngFor="let p of products">
+      {{ p.name }} : {{ p.sellingPrice | currency: "LKR":true }}
+    </li>
+  </ul>-->
+  <tbody>
+    <tr *ngFor="let p of products">
+      <td>{{ p.name }}</td>
+      <td>{{ p.sellingPrice | currency: "LKR":true }}</td>
+      <td>{{ p.category.categoryName }}</td>
+    </tr>
+  </tbody>
+</div>

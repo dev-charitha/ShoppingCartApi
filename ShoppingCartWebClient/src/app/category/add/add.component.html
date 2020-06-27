@@ -1,4 +1,22 @@
-<div class="col-md-12" style="background-color: white;">
+<div class="container py-5" style="background-color: seagreen;">
+  <h3 class="text-center text-uppercase">List of Employees</h3>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr class="text-center text-uppercase">
+        <th>Employee ID</th>
+        <th>First Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees">
+        <td>{{ emp.id }}</td>
+        <td>{{ emp.categoryName }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--<div class="col-md-12" style="background-color: white;">
   <form [formGroup]="service.formModel" autocomplete="off">
     <div class="form-group required">
       <label>Category Name</label>
@@ -29,4 +47,4 @@
       </div>
     </div>
   </form>
-</div>
+</div>-->
