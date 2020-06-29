@@ -1,0 +1,5 @@
+2020-06-28T00:26:57.4898893+05:30 [INF] () You can clap up to 50 times per post!
+2020-06-28T00:26:57.8874727+05:30 [ERR] () You forgot to follow me for more programming made simple articles!
+2020-06-28T00:26:58.4417505+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-06-28T00:26:58.4459770+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-06-28T00:26:58.4479575+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api"
