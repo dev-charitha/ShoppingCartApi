@@ -30,9 +30,8 @@ namespace ShoppingCart.Api.Controllers
         /// <returns></returns>
         [HttpGet("/api/categories")]
         public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
-        { 
-            var result = await _icategories.GetCategories();
-            return Ok(result);
+        {
+            return await _icategories.GetCategories();
         }
 
     }

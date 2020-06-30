@@ -23,16 +23,14 @@ namespace ShoppingCartUnitTest
         }
 
         [Fact]
-        public async void Get_WhenCalled_ReturnsAllItems()
+        public async void Get_WhenCalled_ReturnsAllCategories()
         {
             // Act
             var okResult = await _controller.GetCategories();
-            //var okResult = await _controller.GetCategories() as OkObjectResult;
 
             // Assert
             var items = Assert.IsType<List<Category>>(okResult.Value);
             Assert.Equal(3, items.Count);
         }
-
     }
 }

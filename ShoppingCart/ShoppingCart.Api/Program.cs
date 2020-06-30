@@ -27,7 +27,5 @@ namespace ShoppingCart.Api
                     loggerConfig.ReadFrom
                     .Configuration(hostingContext.Configuration)
                 );
-
-
     }
 }
