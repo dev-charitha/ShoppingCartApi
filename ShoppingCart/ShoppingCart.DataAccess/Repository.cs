@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace ShoppingCart.DataAccess
 {
@@ -16,33 +18,25 @@ namespace ShoppingCart.DataAccess
         }
 
         #region Category
-        public List<Category> GetCategories() {
-            return _contextSC.Categories
+
+        /// <summary>
+        /// Get All Categories from Context and Return.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<ActionResult<IEnumerable<Category>>> GetCategories() {
+           return await _contextSC.Categories
                 .OrderBy(p => p.Id)
-                .ToList();
+                .ToListAsync();
         }
 
-        public ActionResult<Category> AddCategories(Category categoryItem)
-        {
-            var category = new Category
-            {
-                //Id = categoryItem.Id,
-                CategoryName = categoryItem.CategoryName
-            };
-
-            _contextSC.Categories.Add(category);
-            _contextSC.SaveChanges();
-
-            return categoryItem;
-        }
         #endregion
 
         #region Product
-        public List<Product> GetProducts()
+        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
-            return _contextSC.Products
+            return await _contextSC.Products
                 .OrderBy(p => p.Id)
-                .ToList();
+                .ToListAsync();
         }
         #endregion
 

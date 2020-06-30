@@ -22,35 +22,16 @@ namespace ShoppingCart.Api.Controllers
         {
             _logger = logger;
             _service = service;
-
         }
 
+        /// <summary>
+        /// Return All Products.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("/api/products")]
-        public ActionResult<List<Product>> GetProducts()
+        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
-            return _service.GetProducts();
+            return await _service.GetProducts();
         }
-
-        //[HttpPost("/api/products")]
-        //public ActionResult<Product> AddProduct(Product product)
-        //{
-        //    _service.AddProduct(product);
-        //    return product;
-        //}
-
-        //[HttpPut("/api/products/{id}")]
-        //public ActionResult<Product> UpdateProduct(string id, Product product)
-        //{
-        //    _service.UpdateProduct(id, product);
-        //    return product;
-        //}
-
-        //[HttpDelete("/api/products/{id}")]
-        //public ActionResult<string> DeleteProduct(string id)
-        //{
-        //    _service.DeleteProduct(id);
-        //    //_logger.LogInformation("products", _products);
-        //    return id;
-        //}
     }
 }

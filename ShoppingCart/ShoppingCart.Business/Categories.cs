@@ -16,27 +16,15 @@ namespace ShoppingCart.Business
             _repository = repository;
         }
 
-        
-
-        //public async Task<IEnumerable<Category>> GetAllCategory()
-        //{
-        //    var result= _repository.GetAllCategory();
-        //    return result;
-        //}
-
-        //Get Category
-        public List<Category> GetCategories()
+        /// <summary>
+        /// Return All Categoris to the Controller.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
         {
-            return _repository.GetCategories();
+            var result = await _repository.GetCategories();
+            return result;
         }
-
-        //Add Category
-        public ActionResult<Category> AddCategories(Category categoryItem)
-        {
-            _repository.AddCategories(categoryItem);
-            return categoryItem;
-        }
-
 
     }
 }

@@ -10,9 +10,7 @@ namespace ShoppingCart.Business
 {
     public interface ICategories
     {
-        //Task<IEnumerable<Category>> GetAllCategory();
-        public List<Category> GetCategories();
-        public ActionResult<Category> AddCategories(Category categoryItem);
+        public Task<ActionResult<IEnumerable<Category>>> GetCategories();
 
     }
 }

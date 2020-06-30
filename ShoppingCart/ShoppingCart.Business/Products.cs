@@ -1,8 +1,10 @@
-﻿using ShoppingCart.DataAccess;
+﻿using Microsoft.AspNetCore.Mvc;
+using ShoppingCart.DataAccess;
 using ShoppingCart.DataAccess.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ShoppingCart.Business
 {
@@ -15,9 +17,13 @@ namespace ShoppingCart.Business
             _repository = repository;
         }
 
-        public List<Product> GetProducts()
+        /// <summary>
+        /// Return All Products to the Controller.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
-            return _repository.GetProducts();
+            return await _repository.GetProducts();
         }
     }
 }

@@ -19,4 +19,3 @@ C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\Shoppi
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\netcoreapp3.1\ShoppingCart.DataAccess.dll
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\netcoreapp3.1\ShoppingCart.DataAccess.pdb
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\netcoreapp3.1\ShoppingCart.DataAccess.genruntimeconfig.cache
-C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.DataAccess\obj\Debug\netcoreapp3.1\ShoppingCart.DataAccess.csprojAssemblyReference.cache

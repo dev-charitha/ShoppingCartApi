@@ -3,17 +3,18 @@ using ShoppingCart.DataAccess.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ShoppingCart.DataAccess
 {
     public interface IRepository
     {
-        //IEnumerable<Category> GetAllCategory();
-        public List<Category> GetCategories();
-        public ActionResult<Category> AddCategories(Category categoryItem);
+        #region Category
+        public Task<ActionResult<IEnumerable<Category>>> GetCategories();
+        #endregion
 
         #region Product
-        public List<Product> GetProducts();
+        public Task<ActionResult<IEnumerable<Product>>> GetProducts();
         #endregion
     }
 }

@@ -24,23 +24,15 @@ namespace ShoppingCart.Api.Controllers
             _icategories = icategories;
         }
 
-        //public async Task<ActionResult<IEnumerable<Category>>> GetCategory()
-        //{
-        //    var results= await _categories.GetAllCategory();
-        //    return Ok(results);
-        //}
-
+        /// <summary>
+        /// Return All Categoris.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("/api/categories")]
-        public ActionResult<List<Category>> GetCategories()
-        {
-            return _icategories.GetCategories();
-        }
-
-        [HttpPost("/api/categories")]
-        public ActionResult<Category> AddProduct(Category category)
-        {
-            _icategories.AddCategories(category);
-            return category;
+        public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
+        { 
+            var result = await _icategories.GetCategories();
+            return Ok(result);
         }
 
     }

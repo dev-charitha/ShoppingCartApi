@@ -9,8 +9,6 @@ namespace ShoppingCart.DataAccess
 {
     public class ContextSC : DbContext
     {
-        //public ContextSC(DbContextOptions<ContextSC> options) : base(options) { 
-        //}
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
 
@@ -23,6 +21,7 @@ namespace ShoppingCart.DataAccess
              .AddJsonFile("appsettings.json")
              .Build();
 
+            //Take Connection String from the appsettings.json File.
             optionsBuilder.UseSqlServer(configuration.GetConnectionString("OnlineShoppingDbConnection"));
         }
     }
