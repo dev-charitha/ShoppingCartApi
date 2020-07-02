@@ -1,35 +1,39 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Moq;
 using ShoppingCart.Api.Controllers;
 using ShoppingCart.Business;
 using ShoppingCart.DataAccess.Models;
 using System;
 using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace ShoppingCartUnitTest
 {
-    public class CategoryControllerTest
+    public class CategoryControllerTest : ControllerBase
     {
-        CategoryController _controller;
-        ICategories _service;
-        ILogger _logger;
-
-        public CategoryControllerTest()
-        {
-            _service = new CategoriesServiceFake();
-            _controller = new CategoryController((ILogger<CategoryController>)_logger, _service);
-
-        }
-
+        ILogger logger;
         [Fact]
-        public async void Get_WhenCalled_ReturnsAllCategories()
+        public async Task Get_WhenCalled_ReturnsAllCategories()
         {
+            //Arrange
+            var categoriesMock = new Mock<ICategories>();
+            categoriesMock.Setup(x => x.GetCategories()).ReturnsAsync(() => new List<Category>
+            {
+                new Category{ Id=1, CategoryName = "Sport"},
+                new Category{ Id=2, CategoryName = "Electronic"},
+                new Category{ Id=3, CategoryName = "Electronic"}
+            });
+
+            var controller = new CategoryController((ILogger<CategoryController>) logger, categoriesMock.Object);
+
             // Act
-            var okResult = await _controller.GetCategories();
+            var result = await controller.GetCategories();
 
             // Assert
-            var items = Assert.IsType<List<Category>>(okResult.Value);
+            var items = Assert.IsType<List<Category>>(result.Value);
             Assert.Equal(3, items.Count);
         }
     }

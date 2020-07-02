@@ -10,6 +10,7 @@ C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\Shoppi
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\ShoppingCartUnitTest.runtimeconfig.dev.json
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\ShoppingCartUnitTest.dll
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\ShoppingCartUnitTest.pdb
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
@@ -45,6 +46,7 @@ C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\Shoppi
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.Utilities.dll
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\testhost.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\Moq.dll
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\Serilog.dll

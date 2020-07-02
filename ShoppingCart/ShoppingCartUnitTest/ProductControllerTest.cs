@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Moq;
 using ShoppingCart.Api.Controllers;
 using ShoppingCart.Business;
 using ShoppingCart.DataAccess.Models;
@@ -9,26 +11,28 @@ using Xunit;
 
 namespace ShoppingCartUnitTest
 {
-    public class ProductControllerTest
+    public class ProductControllerTest : ControllerBase
     {
-        ProductController _controller;
-        IProducts _service;
-        ILogger _logger;
-
-        public ProductControllerTest()
-        {
-            _service = new ProductsServiceFake();
-            _controller = new ProductController((ILogger<ProductController>)_logger, _service);
-        }
-
+        ILogger logger;
         [Fact]
         public async void Get_WhenCalled_ReturnsAllProducts()
         {
+            //Arrange
+            var productsMock = new Mock<IProducts>();
+            productsMock.Setup(x => x.GetProducts()).ReturnsAsync(() => new List<Product>
+            {
+                new Product{ Id=1, Name = "Dell Core I7 Laptop"},
+                new Product{ Id=2, Name = "Apple 6S"},
+                new Product{ Id=3, Name = "Cannon R5"}
+            });
+
+            var controller = new ProductController((ILogger<ProductController>)logger, productsMock.Object);
+
             // Act
-            var okResult = await _controller.GetProducts();
+            var result = await controller.GetProducts();
 
             // Assert
-            var items = Assert.IsType<List<Product>>(okResult.Value);
+            var items = Assert.IsType<List<Product>>(result.Value);
             Assert.Equal(3, items.Count);
         }
     }
