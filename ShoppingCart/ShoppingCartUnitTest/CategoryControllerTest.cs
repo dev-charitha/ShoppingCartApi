@@ -1,12 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Moq;
 using ShoppingCart.Api.Controllers;
 using ShoppingCart.Business;
 using ShoppingCart.DataAccess.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -14,7 +11,6 @@ namespace ShoppingCartUnitTest
 {
     public class CategoryControllerTest : ControllerBase
     {
-        ILogger logger;
         [Fact]
         public async Task Get_WhenCalled_ReturnsAllCategories()
         {
@@ -27,7 +23,7 @@ namespace ShoppingCartUnitTest
                 new Category{ Id=3, CategoryName = "Electronic"}
             });
 
-            var controller = new CategoryController((ILogger<CategoryController>) logger, categoriesMock.Object);
+            var controller = new CategoryController(categoriesMock.Object);
 
             // Act
             var result = await controller.GetCategories();

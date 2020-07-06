@@ -1,19 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Moq;
 using ShoppingCart.Api.Controllers;
 using ShoppingCart.Business;
 using ShoppingCart.DataAccess.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace ShoppingCartUnitTest
 {
     public class ProductControllerTest : ControllerBase
     {
-        ILogger logger;
         [Fact]
         public async void Get_WhenCalled_ReturnsAllProducts()
         {
@@ -26,7 +22,7 @@ namespace ShoppingCartUnitTest
                 new Product{ Id=3, Name = "Cannon R5"}
             });
 
-            var controller = new ProductController((ILogger<ProductController>)logger, productsMock.Object);
+            var controller = new ProductController(productsMock.Object);
 
             // Act
             var result = await controller.GetProducts();

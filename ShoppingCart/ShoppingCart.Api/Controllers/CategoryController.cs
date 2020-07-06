@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using ShoppingCart.Business;
 using ShoppingCart.DataAccess.Models;
 
@@ -15,12 +10,10 @@ namespace ShoppingCart.Api.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private ILogger _logger;
         private ICategories _icategories;
 
-        public CategoryController(ILogger<CategoryController> logger, ICategories icategories) 
+        public CategoryController(ICategories icategories) 
         {
-            _logger = logger;
             _icategories = icategories;
         }
 
@@ -31,6 +24,7 @@ namespace ShoppingCart.Api.Controllers
         [HttpGet("/api/categories")]
         public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
         {
+            //throw new Exception("Test Exception");
             return await _icategories.GetCategories();
         }
 
