@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart.Business", "Sh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart.DataAccess", "ShoppingCart.DataAccess\ShoppingCart.DataAccess.csproj", "{EE288B48-8D8F-4784-BF31-300553FA95BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartUnitTest", "ShoppingCartUnitTest\ShoppingCartUnitTest.csproj", "{D13ED965-7126-4020-99EA-C4E9299B5E15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartUnitTest", "ShoppingCartUnitTest\ShoppingCartUnitTest.csproj", "{D13ED965-7126-4020-99EA-C4E9299B5E15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

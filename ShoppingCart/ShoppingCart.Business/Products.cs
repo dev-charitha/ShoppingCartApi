@@ -10,11 +10,11 @@ namespace ShoppingCart.Business
 {
     public class Products: IProducts
     {
-        private readonly IRepository _repository;
+        private readonly IRepository repository;
 
-        public Products(IRepository repository)
+        public Products(IRepository _repository)
         {
-            _repository = repository;
+            repository = _repository;
         }
 
         /// <summary>
@@ -23,7 +23,12 @@ namespace ShoppingCart.Business
         /// <returns></returns>
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
-            return await _repository.GetProducts();
+            return await repository.GetProducts();
+        }
+
+        public async Task<ActionResult<IEnumerable<Product>>> GetProductsByCategoryId(int id)
+        {
+            return await repository.GetProductsByCategoryId(id);
         }
     }
 }

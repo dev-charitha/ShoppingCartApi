@@ -149,8 +149,11 @@ C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\Shoppi
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\obj\Debug\netcoreapp3.1\ShoppingCartUnitTest.csprojAssemblyReference.cache
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\obj\Debug\netcoreapp3.1\ShoppingCartUnitTest.AssemblyInfoInputs.cache
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\obj\Debug\netcoreapp3.1\ShoppingCartUnitTest.AssemblyInfo.cs
-C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\obj\Debug\netcoreapp3.1\ShoppingCartUnitTest.csproj.CoreCompileInputs.cache
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\obj\Debug\netcoreapp3.1\ShoppingCartUnitTest.csproj.CopyComplete
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\obj\Debug\netcoreapp3.1\ShoppingCartUnitTest.dll
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\obj\Debug\netcoreapp3.1\ShoppingCartUnitTest.pdb
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\obj\Debug\netcoreapp3.1\ShoppingCartUnitTest.genruntimeconfig.cache
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCartUnitTest\obj\Debug\netcoreapp3.1\ShoppingCartUnitTest.csproj.CoreCompileInputs.cache

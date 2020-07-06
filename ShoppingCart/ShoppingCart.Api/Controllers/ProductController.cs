@@ -10,12 +10,10 @@ namespace ShoppingCart.Api.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private IProducts _service;
-
-
-        public ProductController(IProducts service)
+        private IProducts iproducts;
+        public ProductController(IProducts _iproducts)
         {
-            _service = service;
+            iproducts = _iproducts;
         }
 
         /// <summary>
@@ -26,7 +24,13 @@ namespace ShoppingCart.Api.Controllers
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
             //throw new Exception("Test Exception product");
-            return await _service.GetProducts();
+            return await iproducts.GetProducts();
+        }
+
+        [HttpGet("/api/products/categories/{id}")]
+        public async Task<ActionResult<IEnumerable<Product>>> GetProductsByCategoryId(int id)
+        {
+            return await iproducts.GetProductsByCategoryId(id);
         }
     }
 }

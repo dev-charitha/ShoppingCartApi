@@ -10,5 +10,6 @@ namespace ShoppingCart.Business
     public interface IProducts
     {
         public Task<ActionResult<IEnumerable<Product>>> GetProducts();
+        public Task<ActionResult<IEnumerable<Product>>> GetProductsByCategoryId(int id);
     }
 }

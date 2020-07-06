@@ -15,6 +15,7 @@ namespace ShoppingCart.DataAccess
 
         #region Product
         public Task<ActionResult<IEnumerable<Product>>> GetProducts();
+        public Task<ActionResult<IEnumerable<Product>>> GetProductsByCategoryId(int id);
         #endregion
     }
 }

@@ -10,11 +10,10 @@ namespace ShoppingCart.Api.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private ICategories _icategories;
-
-        public CategoryController(ICategories icategories) 
+        private ICategories icategories;
+        public CategoryController(ICategories _icategories) 
         {
-            _icategories = icategories;
+            icategories = _icategories;
         }
 
         /// <summary>
@@ -25,7 +24,7 @@ namespace ShoppingCart.Api.Controllers
         public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
         {
             //throw new Exception("Test Exception");
-            return await _icategories.GetCategories();
+            return await icategories.GetCategories();
         }
 
     }

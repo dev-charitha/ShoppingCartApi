@@ -83,9 +83,6 @@ C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\Shoppi
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.csprojAssemblyReference.cache
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.AssemblyInfoInputs.cache
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.AssemblyInfo.cs
-C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.csproj.CoreCompileInputs.cache
-C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.RazorTargetAssemblyInfo.cache
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.csproj.CopyComplete
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\staticwebassets\ShoppingCart.Api.StaticWebAssets.Manifest.cache
@@ -93,3 +90,9 @@ C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\Shoppi
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.dll
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.pdb
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.genruntimeconfig.cache
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.csproj.CoreCompileInputs.cache
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api\obj\Debug\netcoreapp3.1\ShoppingCart.Api.MvcApplicationPartsAssemblyInfo.cache
