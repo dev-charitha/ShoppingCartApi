@@ -1,0 +1,20 @@
+2020-07-09T06:13:14.6203572+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-09T06:13:14.9504605+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-09T06:13:14.9565525+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api"
+2020-07-09T06:33:15.6298940+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-09T06:33:15.8052751+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-09T06:33:15.8079936+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api"
+2020-07-09T07:45:29.3585121+05:30 [ERR] () A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+2020-07-09T07:45:45.6271958+05:30 [ERR] () A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+2020-07-09T13:20:04.1058439+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-09T13:20:04.2992851+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-09T13:20:04.3053010+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api"
+2020-07-09T13:25:07.8335536+05:30 [ERR] () A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+2020-07-09T13:25:41.0348623+05:30 [ERR] () A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+2020-07-09T15:32:39.5787950+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-09T15:32:40.0337919+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-09T15:32:40.0385662+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api"
+2020-07-09T15:54:15.6234571+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-09T15:54:15.6762979+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-09T15:54:15.6778453+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCart\ShoppingCart.Api"
+2020-07-09T15:58:02.0945540+05:30 [ERR] () A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.

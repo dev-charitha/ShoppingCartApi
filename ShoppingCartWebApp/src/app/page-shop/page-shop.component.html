@@ -6,8 +6,16 @@
           <h2>Category</h2>
           <div class="panel-group category-products" id="accordian">
             <!--ListCategoryComponent-->
+
+            <div *ngFor="let p of categories" class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a href="#">{{ p.categoryName }}</a>
+                </h4>
+              </div>
+            </div>
             <!--<router-outlet></router-outlet>-->
-            <app-list-category></app-list-category>
+            <!--<app-list-category></app-list-category>-->
             <!--/ListCategoryComponent-->
           </div>
         </div>
@@ -17,7 +25,23 @@
         <div class="features_items">
           <h2 class="title text-center">Features Items</h2>
           <!--ListProductComponent-->
-          <app-list-product></app-list-product>
+          <div class="col-sm-4" *ngFor="let p of products">
+            <div class="product-image-wrapper">
+              <div class="single-products">
+                <div class="productinfo text-center">
+                  <!--<img src="../assets/images/shop/luxmi-iron-1.jpg" alt="" />-->
+                  <img src="../assets/images/shop/{{ p.imagePath }}" />
+                  <!--<img [src]="'../assets/images/shop/' + p.imagePath" />-->
+                  <h2>LKR {{ p.sellingPrice }}</h2>
+                  <p>{{ p.name }}</p>
+                  <a href="#" class="btn btn-default add-to-cart"
+                    ><i class="fa fa-shopping-cart"></i>Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<app-list-product></app-list-product>-->
           <!--/ListProductComponent-->
           <ul class="pagination">
             <li class="active"><a href="">1</a></li>

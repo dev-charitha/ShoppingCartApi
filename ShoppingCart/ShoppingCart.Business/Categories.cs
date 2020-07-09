@@ -17,13 +17,12 @@ namespace ShoppingCart.Business
         }
 
         /// <summary>
-        /// Return All Categoris to the Controller.
+        /// Return all categoris to the controller.
         /// </summary>
         /// <returns></returns>
         public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
         {
-            var result = await _repository.GetCategories();
-            return result;
+            return await _repository.GetCategories();
         }
 
     }

@@ -34,14 +34,9 @@ namespace ShoppingCart.DataAccess
         #region Product
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
-            List<Product> pro = await _contextSC.Products
+            return await _contextSC.Products
                 .OrderBy(p => p.Id)
                 .ToListAsync();
-
-            return pro;
-            //return await _contextSC.Products
-            //    .OrderBy(p => p.Id)
-            //    .ToListAsync();
         }
 
         public async Task<ActionResult<IEnumerable<Product>>> GetProductsByCategoryId(int id)

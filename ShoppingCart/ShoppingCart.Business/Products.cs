@@ -18,7 +18,7 @@ namespace ShoppingCart.Business
         }
 
         /// <summary>
-        /// Return All Products to the Controller.
+        /// Return all products to the controller.
         /// </summary>
         /// <returns></returns>
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
@@ -26,6 +26,11 @@ namespace ShoppingCart.Business
             return await repository.GetProducts();
         }
 
+        /// <summary>
+        /// Return product to the controller when provide a category id.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<ActionResult<IEnumerable<Product>>> GetProductsByCategoryId(int id)
         {
             return await repository.GetProductsByCategoryId(id);

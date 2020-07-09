@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ShoppingCart.Business;
@@ -17,16 +18,21 @@ namespace ShoppingCart.Api.Controllers
         }
 
         /// <summary>
-        /// Return All Products.
+        /// Return all products.
         /// </summary>
         /// <returns></returns>
         [HttpGet("/api/products")]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
-            //throw new Exception("Test Exception product");
             return await iproducts.GetProducts();
         }
 
+
+        /// <summary>
+        /// Return product when provide a category id.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("/api/products/categories/{id}")]
         public async Task<ActionResult<IEnumerable<Product>>> GetProductsByCategoryId(int id)
         {

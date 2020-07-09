@@ -38,8 +38,6 @@ namespace ShoppingCart.Api
             services.AddMvc(options => {
                 options.Filters.Add<ExceptionActionFilter>();
             });
-
-            services.AddScoped<DataTransferSecurity>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,6 +64,7 @@ namespace ShoppingCart.Api
             //logger.Debug("You should click the clap button if you found this post useful!");
             //logger.Information("You can clap up to 50 times per post!");
             //logger.Error("You forgot to follow me for more programming made simple articles!");
+
         }
     }
 }

@@ -1,4 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization.Json;
+using System.Security.Cryptography;
+using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ShoppingCart.Business;
@@ -17,13 +22,12 @@ namespace ShoppingCart.Api.Controllers
         }
 
         /// <summary>
-        /// Return All Categoris.
+        /// Return all categoris.
         /// </summary>
         /// <returns></returns>
         [HttpGet("/api/categories")]
         public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
         {
-            //throw new Exception("Test Exception");
             return await icategories.GetCategories();
         }
 

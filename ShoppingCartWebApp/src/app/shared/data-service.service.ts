@@ -6,28 +6,15 @@ import { map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class DataServiceService {
-  constructor(private http: HttpClient) {}
+  private REST_API_SERVER = 'http://localhost:5000/api';
 
-  readonly BaseURI = 'http://localhost:5000/api';
+  constructor(private httpClient: HttpClient) {}
 
-  public categories = [];
-  public products = [];
-
-  loadCategories() {
-    return this.http.get(this.BaseURI + '/categories').pipe(
-      map((data: any[]) => {
-        this.categories = data;
-        return true;
-      })
-    );
+  public loadCategories() {
+    return this.httpClient.get(this.REST_API_SERVER + '/categories');
   }
 
-  loadProducts() {
-    return this.http.get(this.BaseURI + '/products').pipe(
-      map((data: any[]) => {
-        this.products = data;
-        return true;
-      })
-    );
+  public loadProducts() {
+    return this.httpClient.get(this.REST_API_SERVER + '/products');
   }
 }
