@@ -11,7 +11,7 @@ namespace ShoppingCart.Api.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private IProducts iproducts;
+        private readonly IProducts iproducts;
         public ProductController(IProducts _iproducts)
         {
             iproducts = _iproducts;

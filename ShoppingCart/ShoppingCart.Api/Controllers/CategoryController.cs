@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization.Json;
-using System.Security.Cryptography;
-using System.Text;
-using System.Text.Json;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ShoppingCart.Business;
@@ -15,7 +10,7 @@ namespace ShoppingCart.Api.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private ICategories icategories;
+        private readonly ICategories icategories;
         public CategoryController(ICategories _icategories) 
         {
             icategories = _icategories;

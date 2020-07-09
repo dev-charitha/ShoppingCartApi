@@ -2,8 +2,6 @@
 using Microsoft.Extensions.Configuration;
 using ShoppingCart.DataAccess.Models;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ShoppingCart.DataAccess
 {

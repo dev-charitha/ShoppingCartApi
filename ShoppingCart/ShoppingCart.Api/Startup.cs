@@ -1,18 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using ShoppingCart.Business;
 using ShoppingCart.DataAccess;
-using Serilog;
 
 namespace ShoppingCart.Api
 {
@@ -60,11 +52,6 @@ namespace ShoppingCart.Api
             {
                 endpoints.MapControllers();
             });
-
-            //logger.Debug("You should click the clap button if you found this post useful!");
-            //logger.Information("You can clap up to 50 times per post!");
-            //logger.Error("You forgot to follow me for more programming made simple articles!");
-
         }
     }
 }

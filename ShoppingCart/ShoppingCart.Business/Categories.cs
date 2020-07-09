@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShoppingCart.DataAccess;
 using ShoppingCart.DataAccess.Models;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -9,11 +8,11 @@ namespace ShoppingCart.Business
 {
     public class Categories : ICategories
     {
-        private readonly IRepository _repository;
+        private readonly IRepository repository;
 
-        public Categories(IRepository repository)
+        public Categories(IRepository _repository)
         {
-            _repository = repository;
+            repository = _repository;
         }
 
         /// <summary>
@@ -22,7 +21,7 @@ namespace ShoppingCart.Business
         /// <returns></returns>
         public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
         {
-            return await _repository.GetCategories();
+            return await repository.GetCategories();
         }
 
     }
