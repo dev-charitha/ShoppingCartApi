@@ -1,0 +1,387 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.UnitTest\\ShoppingCart.UnitTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Api\\ShoppingCart.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Api\\ShoppingCart.Api.csproj",
+        "projectName": "ShoppingCart.Api",
+        "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Api\\ShoppingCart.Api.csproj",
+        "packagesPath": "C:\\Users\\Charitha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Charitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Business\\ShoppingCart.Business.csproj": {
+                "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Business\\ShoppingCart.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Business\\ShoppingCart.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Business\\ShoppingCart.Business.csproj",
+        "projectName": "ShoppingCart.Business",
+        "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Business\\ShoppingCart.Business.csproj",
+        "packagesPath": "C:\\Users\\Charitha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Charitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj": {
+                "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj"
+              },
+              "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.8.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj",
+        "projectName": "ShoppingCart.Common",
+        "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj",
+        "packagesPath": "C:\\Users\\Charitha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Charitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
+        "projectName": "ShoppingCart.DataAccess",
+        "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Charitha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Charitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj": {
+                "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.UnitTest\\ShoppingCart.UnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.UnitTest\\ShoppingCart.UnitTest.csproj",
+        "projectName": "ShoppingCart.UnitTest",
+        "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.UnitTest\\ShoppingCart.UnitTest.csproj",
+        "packagesPath": "C:\\Users\\Charitha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.UnitTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Charitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Api\\ShoppingCart.Api.csproj": {
+                "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Api\\ShoppingCart.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.14.5, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

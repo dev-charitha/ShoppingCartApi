@@ -1,0 +1,88 @@
+2020-07-20T00:04:47.8562765+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-20T00:04:47.8790795+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-20T00:04:47.9134377+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-20T00:04:47.9143134+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-20T00:04:58.8541688+05:30 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'ShoppingCart.Business.Interfaces.IProductManager' while attempting to activate 'ShoppingCart.Api.Controllers.ProductController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-07-20T00:08:15.2592213+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-20T00:08:15.2810550+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-20T00:08:15.3067409+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-20T00:08:15.3076198+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-20T00:09:56.5300886+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-20T00:09:56.5529227+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-20T00:09:56.5824510+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-20T00:09:56.5833100+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-20T00:23:56.4737607+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-20T00:23:56.4943163+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-20T00:23:56.5216585+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-20T00:23:56.5226301+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-20T00:24:43.2438442+05:30 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected which is not supported. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 0.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.JsonSerializer.Write(Utf8JsonWriter writer, Int32 originalWriterDepth, Int32 flushThreshold, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore(Utf8JsonWriter writer, Object value, Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.WriteCore(PooledByteBufferWriter output, Object value, Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.WriteCoreString(Object value, Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializer.Serialize[TValue](TValue value, JsonSerializerOptions options)
+   at ShoppingCart.Business.ProductManager.GetProductByCategoryIdenc(String encodedId) in C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Business\ProductManager.cs:line 29
+   at ShoppingCart.Api.Controllers.ProductController.GetProductByCategoryId(String encodedId) in C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api\Controllers\ProductController.cs:line 47
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-07-20T00:38:01.1589569+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-20T00:38:01.1783294+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-20T00:38:01.2062089+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-20T00:38:01.2070760+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-20T00:43:53.0425961+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-20T00:43:53.0642476+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-20T00:43:53.0974822+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-20T00:43:53.0984162+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-20T00:45:08.6583679+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-20T00:45:08.6858976+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-20T00:45:08.7295757+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-20T00:45:08.7304546+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-20T01:11:39.9228888+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-20T01:11:40.2151227+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-20T01:11:40.2956428+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-20T01:11:40.3010794+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-20T01:32:23.2384257+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-20T01:32:23.6202011+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-20T01:32:23.6270519+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-20T01:32:23.6651035+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-20T07:52:45.0377853+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-20T07:52:45.0859700+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-20T07:52:45.1769868+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-20T07:52:45.1783406+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-20T09:11:36.8104832+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-20T09:11:36.8939921+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-20T09:11:36.9644646+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-20T09:11:36.9681104+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-20T09:14:14.7026849+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-20T09:14:14.7241855+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-20T09:14:14.7537584+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-20T09:14:14.7546394+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"

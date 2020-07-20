@@ -58,7 +58,9 @@
           <div class="shop-menu pull-right">
             <ul class="nav navbar-nav">
               <li>
-                <a href="#"><i class="fa fa-user"></i> Account</a>
+                <a [routerLink]="['/pageregister']" routerLinkActive="active"
+                  ><i class="fa fa-user"></i> Register</a
+                >
               </li>
               <li>
                 <a href="checkout.html"
@@ -99,9 +101,19 @@
           </div>
           <div class="mainmenu pull-left">
             <ul class="nav navbar-nav collapse navbar-collapse">
-              <li><a routerLink="home" class="active">Home</a></li>
-              <li><a routerLink="shop">Shop</a></li>
-              <li><a routerLink="contact">Contact</a></li>
+              <li>
+                <a [routerLink]="['/pagehome']" routerLinkActive="active"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a [routerLink]="['/pageshop']" routerLinkActive="active"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a routerLink="contact" routerLinkActive="active">Contact</a>
+              </li>
             </ul>
           </div>
         </div>

@@ -9,7 +9,12 @@
             <div *ngFor="let p of categories" class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
-                  <a href="#">{{ p.categoryName }}</a>
+                  <a
+                    [routerLink]="['/pageshop']"
+                    id="{{ p.id }}"
+                    (click)="onClickCategory2($event)"
+                    >{{ p.name }}</a
+                  >
                 </h4>
               </div>
             </div>
@@ -26,7 +31,7 @@
             <div class="product-image-wrapper">
               <div class="single-products">
                 <div class="productinfo text-center">
-                  <img src="../assets/images/shop/{{ p.imagePath }}" />
+                  <img src="../assets/images/shop/{{ p.imagePath }}.jpg" />
                   <h2>LKR {{ p.sellingPrice }}</h2>
                   <p>{{ p.name | slice: 0:25 }}...</p>
                   <a href="#" class="btn btn-default add-to-cart"

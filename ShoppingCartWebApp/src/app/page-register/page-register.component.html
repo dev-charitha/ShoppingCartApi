@@ -1,0 +1,50 @@
+<section>
+  <!--form-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-1">
+        <div class="login-form">
+          <!--sign up form-->
+          <h2>New User Signup!</h2>
+          <form
+            [formGroup]="service.formModel"
+            autocomplete="off"
+            (submit)="onSubmit()"
+            style="padding-bottom: 15px;"
+          >
+            <input
+              formControlName="FirstName"
+              type="text"
+              placeholder="First Name"
+            />
+            <input
+              formControlName="LastName"
+              type="text"
+              placeholder="Last Name"
+            />
+            <input
+              formControlName="Email"
+              type="email"
+              placeholder="Email Address"
+            />
+            <input
+              formControlName="HouseNo"
+              type="text"
+              placeholder="House No"
+            />
+            <input formControlName="Street" type="text" placeholder="Street" />
+            <input formControlName="City" type="text" placeholder="City" />
+            <input
+              formControlName="Password"
+              type="password"
+              placeholder="Password"
+            />
+            <button type="submit" class="btn btn-default">Sign Up</button>
+          </form>
+          <!--/sign up form-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/form-->

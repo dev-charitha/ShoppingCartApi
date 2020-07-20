@@ -1,0 +1,16 @@
+2020-07-16T00:27:37.1701981+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-16T00:27:37.4377817+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-16T00:27:37.4393341+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-16T00:27:37.6557438+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-16T00:37:17.8494294+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-16T00:37:17.9216976+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-16T00:37:18.3898873+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-16T00:37:18.4618191+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-16T09:26:28.2435156+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-16T09:26:28.6005298+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-16T09:26:28.6423623+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-16T09:26:28.6449539+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-16T16:57:58.2323202+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-16T16:57:58.3633760+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-16T16:57:58.4056635+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-16T16:57:58.4086336+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
