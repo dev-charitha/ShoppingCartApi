@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj": {}
+    "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\ShoppingCart.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj": {
+    "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\ShoppingCart.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\ShoppingCart.Common.csproj",
         "projectName": "ShoppingCart.Common",
-        "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj",
+        "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\ShoppingCart.Common.csproj",
         "packagesPath": "C:\\Users\\Charitha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\obj\\",
+        "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Charitha\\AppData\\Roaming\\NuGet\\NuGet.Config",

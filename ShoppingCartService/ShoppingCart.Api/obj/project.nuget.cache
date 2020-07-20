@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2YwnNJUpmDDle+S7wFBQ8SjePhu3YpZxCmJLqTcY2ag3oJ+RMec8ZkwYZuTDvxX93dnvk6pBrm6k8z8rdIbnHw==",
+  "dgSpecHash": "90Sr+3P/KHwMq8Fj/UbPiiB7Pf9MySQDF/08VQX0U2vkhNUJluFJOx8dhoz57wg5h9gk7ajqddraDgMq0HSobQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Api\\ShoppingCart.Api.csproj",
+  "projectFilePath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Api\\ShoppingCart.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Charitha\\.nuget\\packages\\elasticsearch.net\\7.8.1\\elasticsearch.net.7.8.1.nupkg.sha512",
     "C:\\Users\\Charitha\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

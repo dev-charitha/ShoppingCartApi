@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {}
+    "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj": {
+    "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\ShoppingCart.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\ShoppingCart.Common.csproj",
         "projectName": "ShoppingCart.Common",
-        "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj",
+        "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\ShoppingCart.Common.csproj",
         "packagesPath": "C:\\Users\\Charitha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\obj\\",
+        "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Charitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {
+    "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
         "projectName": "ShoppingCart.DataAccess",
-        "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
+        "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Charitha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Charitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,8 +79,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj": {
-                "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj"
+              "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\ShoppingCart.Common.csproj": {
+                "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\ShoppingCart.Common.csproj"
               }
             }
           }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RlNFovSLmBFc7fnMW7iH2E5AdInYgrZgAHc2E1Fdn/qZzsNYM0FtIPXBwNcXOZ75NNUb9HQNayHkWjTmb24JDA==",
+  "dgSpecHash": "LRM5Vosawx+lZDTn2c03fPm+MqPc789m+qvC3UhkwNL/tOmzP18EbCWXNOKTtVVIf9wo790gjM8+TpefZTQoDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj",
+  "projectFilePath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\ShoppingCart.Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

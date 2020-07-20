@@ -6308,11 +6308,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Business\\ShoppingCart.Business.csproj",
+      "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Business\\ShoppingCart.Business.csproj",
       "projectName": "ShoppingCart.Business",
-      "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Business\\ShoppingCart.Business.csproj",
+      "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Business\\ShoppingCart.Business.csproj",
       "packagesPath": "C:\\Users\\Charitha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Business\\obj\\",
+      "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Charitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6328,11 +6328,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj": {
-              "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Common\\ShoppingCart.Common.csproj"
+            "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\ShoppingCart.Common.csproj": {
+              "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\ShoppingCart.Common.csproj"
             },
-            "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj"
+            "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj"
             }
           }
         }

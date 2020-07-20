@@ -9414,11 +9414,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.UnitTest\\ShoppingCart.UnitTest.csproj",
+      "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.UnitTest\\ShoppingCart.UnitTest.csproj",
       "projectName": "ShoppingCart.UnitTest",
-      "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.UnitTest\\ShoppingCart.UnitTest.csproj",
+      "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.UnitTest\\ShoppingCart.UnitTest.csproj",
       "packagesPath": "C:\\Users\\Charitha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.UnitTest\\obj\\",
+      "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Charitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9434,8 +9434,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Api\\ShoppingCart.Api.csproj": {
-              "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Api\\ShoppingCart.Api.csproj"
+            "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Api\\ShoppingCart.Api.csproj": {
+              "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Api\\ShoppingCart.Api.csproj"
             }
           }
         }

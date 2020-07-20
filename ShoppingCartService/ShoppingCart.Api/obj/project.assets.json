@@ -7071,11 +7071,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Api\\ShoppingCart.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Api\\ShoppingCart.Api.csproj",
       "projectName": "ShoppingCart.Api",
-      "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Api\\ShoppingCart.Api.csproj",
+      "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Api\\ShoppingCart.Api.csproj",
       "packagesPath": "C:\\Users\\Charitha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Api\\obj\\",
+      "outputPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Charitha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7091,8 +7091,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Business\\ShoppingCart.Business.csproj": {
-              "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.Business\\ShoppingCart.Business.csproj"
+            "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Business\\ShoppingCart.Business.csproj": {
+              "projectPath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Business\\ShoppingCart.Business.csproj"
             }
           }
         }

@@ -7,3 +7,12 @@ C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Common\obj\Debu
 C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Common\obj\Debug\netcoreapp3.1\ShoppingCart.Common.csproj.CoreCompileInputs.cache
 C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Common\obj\Debug\netcoreapp3.1\ShoppingCart.Common.dll
 C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Common\obj\Debug\netcoreapp3.1\ShoppingCart.Common.pdb
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Common\bin\Debug\netcoreapp3.1\ShoppingCart.Common.deps.json
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Common\bin\Debug\netcoreapp3.1\ShoppingCart.Common.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Common\bin\Debug\netcoreapp3.1\ShoppingCart.Common.pdb
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Common\obj\Debug\netcoreapp3.1\ShoppingCart.Common.csprojAssemblyReference.cache
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Common\obj\Debug\netcoreapp3.1\ShoppingCart.Common.AssemblyInfoInputs.cache
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Common\obj\Debug\netcoreapp3.1\ShoppingCart.Common.AssemblyInfo.cs
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Common\obj\Debug\netcoreapp3.1\ShoppingCart.Common.csproj.CoreCompileInputs.cache
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Common\obj\Debug\netcoreapp3.1\ShoppingCart.Common.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Common\obj\Debug\netcoreapp3.1\ShoppingCart.Common.pdb

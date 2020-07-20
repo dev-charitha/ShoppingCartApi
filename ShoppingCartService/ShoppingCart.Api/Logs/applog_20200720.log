@@ -86,3 +86,7 @@ System.Text.Json.JsonException: A possible object cycle was detected which is no
 2020-07-20T09:14:14.7241855+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
 2020-07-20T09:14:14.7537584+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
 2020-07-20T09:14:14.7546394+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
+2020-07-20T09:50:54.1495591+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-20T09:50:54.4063855+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-20T09:50:54.4319496+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-20T09:50:54.4327892+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Api"

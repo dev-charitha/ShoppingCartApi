@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yGr6kQnGQ8Z6Y55ppyByTEbZFuUgJzNB+THuUdZ4LKbd4/NaXqt8sTmZ9FPIA2vH7xuTUQer9OrRlGgYlH8FTg==",
+  "dgSpecHash": "SIKUF2N9WyPX2olHrWy7vE60Cjb1zf11r0rpGT/b9cKwncyLwsrT5IFbNfJJPrwmPhJr7WIIsGwxLFpDVMVLKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.UnitTest\\ShoppingCart.UnitTest.csproj",
+  "projectFilePath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.UnitTest\\ShoppingCart.UnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Charitha\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Charitha\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",

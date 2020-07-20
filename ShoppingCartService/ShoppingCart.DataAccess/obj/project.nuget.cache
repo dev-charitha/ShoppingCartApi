@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5nbAqW8SDIVnkOL7Iq9bmao9pTh0ElgjpNOPNey3507jPgbw6h3JD2zvbWZavd5X9tdZCBCLURpYuZv1Sm+MXA==",
+  "dgSpecHash": "rdgJ4T3z/sUxV8jgzluPTQ6EM0ELRrUJNIAsfmEnAjGJsphZ0RByAMd+iI64CTCtGXl/sPdAgEXwwSN0xiqgXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Charitha\\Documents\\dev\\sample\\ShoppingCart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Charitha\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Charitha\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
