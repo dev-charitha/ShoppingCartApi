@@ -1,8 +1,9 @@
-﻿using ShoppingCart.DataAccess.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using ShoppingCart.DataAccess.Context;
 using ShoppingCart.DataAccess.Model;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace ShoppingCart.DataAccess.Repository
 {
@@ -10,7 +11,10 @@ namespace ShoppingCart.DataAccess.Repository
     {
         public IEnumerable<Customer> GetAll()
         {
-            throw new NotImplementedException();
+            using (var context = new ShoppingCartDbContext())
+            {
+                return context.Customer.Include(a => a.User).ToList();
+            }
         }
 
         public Customer GetById(object id)

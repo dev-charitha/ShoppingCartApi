@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LRM5Vosawx+lZDTn2c03fPm+MqPc789m+qvC3UhkwNL/tOmzP18EbCWXNOKTtVVIf9wo790gjM8+TpefZTQoDw==",
+  "dgSpecHash": "ZFDuI5/tlz9E3oSbbWjL47nWRrF+rwzljH7LiOeIl1dJRyFi1+Xb5E246dWLQEok3eo12rfqa4oEqtUZ/1vNQA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.Common\\ShoppingCart.Common.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Charitha\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

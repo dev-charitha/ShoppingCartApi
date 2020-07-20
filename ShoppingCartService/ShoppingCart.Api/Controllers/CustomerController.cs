@@ -16,6 +16,17 @@ namespace ShoppingCart.Api.Controllers
         }
 
         /// <summary>
+        /// Return all customer.
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("/api/getcustomer")]
+        public IEnumerable<Customer> Get()
+        {
+            var result = _customer.GetAll();
+            return result;
+        }
+
+        /// <summary>
         /// Add new customer when provide customer object
         /// </summary>
         /// <param name="customer"></param>

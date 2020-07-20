@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using ShoppingCart.Api.Extensions;
 using ShoppingCart.Business;
 using ShoppingCart.Business.Interfaces;
 using ShoppingCart.DataAccess.Model;
@@ -47,6 +48,8 @@ namespace ShoppingCart.Api
             app.UseCors(builder => builder.WithOrigins("http://localhost:4200")
             .AllowAnyHeader()
             .AllowAnyMethod());
+
+            app.ConfigureExceptionHandler(logger);
 
             app.UseHttpsRedirection();
 

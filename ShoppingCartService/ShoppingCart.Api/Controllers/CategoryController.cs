@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShoppingCart.DataAccess.Model;
 using ShoppingCart.DataAccess.Repository;
+using System;
 using System.Collections.Generic;
 
 namespace ShoppingCart.Api.Controllers
@@ -22,6 +23,7 @@ namespace ShoppingCart.Api.Controllers
         [HttpGet("/api/getcategory")]
         public IEnumerable<Category> Get()
         {
+            throw new Exception("Test Exception");
             var result = _category.GetAll();
             return result;
         }
