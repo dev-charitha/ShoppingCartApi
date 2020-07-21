@@ -44,7 +44,7 @@ namespace ShoppingCart.UnitTest
         /// <param name="id"></param>
         [Theory]
         [InlineData(1)]
-        public async void Get_WhenCalled_ReturnsProductsByCategoryId(int id)
+        public async Task Get_WhenCalled_ReturnsProductsByCategoryId(int id)
         {
             //Arrange
             var productsMock = new Mock<IProductRepository<Product>>();

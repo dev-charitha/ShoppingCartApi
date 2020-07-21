@@ -334,3 +334,17 @@ C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\obj\Debug\netcoreapp3.1\ShoppingCart.UnitTest.dll
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\obj\Debug\netcoreapp3.1\ShoppingCart.UnitTest.pdb
 C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\obj\Debug\netcoreapp3.1\ShoppingCart.UnitTest.genruntimeconfig.cache
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.UnitTest\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
