@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ATcmKclC/JQOPKRoVulLjEHGCHGBInJ+Cfg9nSDpFATfwPtUs7LzoFFG/pr/ebcC+lSAbd3qqPXY2Xeb2MXZdQ==",
+  "dgSpecHash": "FZxW6hRWWLlAUbAyqLswru9jBXabR8ANEW/w0OqYG2eaLmRMZgb4RA+Grw02g6C7TSHlt9t1WkQvATpV2Gha2A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Charitha\\Documents\\dev\\ShoppingCart\\ShoppingCartApi\\ShoppingCartService\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Charitha\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\Charitha\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Users\\Charitha\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.5\\microsoft.aspnetcore.authorization.3.1.5.nupkg.sha512",
     "C:\\Users\\Charitha\\.nuget\\packages\\microsoft.aspnetcore.metadata\\3.1.5\\microsoft.aspnetcore.metadata.3.1.5.nupkg.sha512",
     "C:\\Users\\Charitha\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
@@ -67,7 +69,7 @@
     "C:\\Users\\Charitha\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Charitha\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
     "C:\\Users\\Charitha\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
-    "C:\\Users\\Charitha\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\Charitha\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\Charitha\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\Charitha\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\Charitha\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",

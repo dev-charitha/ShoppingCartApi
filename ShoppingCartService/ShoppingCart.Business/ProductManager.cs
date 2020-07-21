@@ -1,6 +1,6 @@
 ﻿using ShoppingCart.Business.Interfaces;
 using ShoppingCart.Common;
-using ShoppingCart.DataAccess.Model;
+using ShoppingCart.Common.Model;
 using ShoppingCart.DataAccess.Repository;
 using System;
 using System.Collections.Generic;
@@ -12,8 +12,8 @@ namespace ShoppingCart.Business
 {
     public class ProductManager : IProductManager
     {
-        private readonly IProductRepository<Product> _product;
-        public ProductManager(IProductRepository<Product> category)
+        private readonly IProductRepository<ProductModel> _product;
+        public ProductManager(IProductRepository<ProductModel> category)
         {
             _product = category;
         }
@@ -30,9 +30,9 @@ namespace ShoppingCart.Business
             var decryptedId = DataEncryptionHandler.DecryptStringAES(encryptedId);
             int id = int.Parse(decryptedId);
 
-            List<Product> productList = _product.GetProductByCategoryId(id).ToList();
+            List<ProductModel> productList = _product.GetProductByCategoryId(id).ToList();
 
-            var newproductList = productList.Select(a => new Product() {
+            var newproductList = productList.Select(a => new ProductModel() {
                 Id = a.Id,
                 Name = a.Name,
                 Description = a.Description,

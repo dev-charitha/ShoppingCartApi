@@ -1,35 +1,61 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using ShoppingCart.Common.Models;
 using ShoppingCart.DataAccess.Context;
-using ShoppingCart.DataAccess.Model;
+using ShoppingCart.DataAccess.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace ShoppingCart.DataAccess.Repository
 {
-    public class CustomerRepository : IRepository<Customer>
+    public class CustomerRepository : IRepository<CustomerModel>
     {
-        public IEnumerable<Customer> GetAll()
+        private readonly IMapper _mapper;
+        public CustomerRepository(IMapper mapper)
+        {
+            _mapper = mapper;
+        }
+        public IEnumerable<CustomerModel> GetAll()
         {
             using (var context = new ShoppingCartDbContext())
             {
-                return context.Customer.Include(a => a.User).ToList();
+                var result = context.Customer.Include(a => a.User).ToList();
+                return _mapper.Map<List<CustomerModel>>(result);
             }
         }
 
-        public Customer GetById(object id)
+        public CustomerModel GetById(object id)
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(Customer obj)
+        public void Insert(CustomerModel obj)
         {
             if (obj != null)
             {
-                using var context = new ShoppingCartDbContext();
-
-                context.Customer.Add(obj);
-                context.SaveChanges();
+                CustomerEntity customerEntity;
+                using (var context = new ShoppingCartDbContext())
+                {
+                    customerEntity = new CustomerEntity()
+                    {
+                        FirstName = obj.FirstName,
+                        LastName = obj.LastName,
+                        Email = obj.Email,
+                        HouseNo = obj.HouseNo,
+                        Street = obj.Street,
+                        City = obj.City,
+                        IsActive = true,
+                        CreatedDate = obj.CreatedDate,
+                        User = new UserEntity()
+                        { 
+                            UserName = obj.UserName,
+                            Password = obj.Password
+                        }
+                    };
+                    context.Customer.Add(customerEntity);
+                    context.SaveChanges();
+                }
             }
         }
 
@@ -38,7 +64,7 @@ namespace ShoppingCart.DataAccess.Repository
             throw new NotImplementedException();
         }
 
-        public void Update(Customer obj)
+        public void Update(CustomerModel obj)
         {
             throw new NotImplementedException();
         }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ShoppingCart.Common
 {
-    public class DataEncryptionHandler
+    public static class DataEncryptionHandler
     {
         private static byte[] keyBytes = Encoding.UTF8.GetBytes("8080808080808080");
         private static byte[] iv = Encoding.UTF8.GetBytes("8080808080808080");

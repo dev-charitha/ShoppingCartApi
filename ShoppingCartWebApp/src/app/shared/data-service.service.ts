@@ -52,6 +52,8 @@ export class DataServiceService {
       HouseNo: this.formModel.value.HouseNo,
       Street: this.formModel.value.Street,
       City: this.formModel.value.City,
+      UserName: this.formModel.value.Email,
+      Password: this.formModel.value.Password,
     };
     return this.httpClient.post(this.REST_API_SERVER + '/addcustomer', body);
   }

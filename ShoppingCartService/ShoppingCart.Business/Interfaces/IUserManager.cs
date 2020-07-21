@@ -1,7 +1,5 @@
 ﻿using ShoppingCart.Common.Model;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace ShoppingCart.Business.Interfaces
 {

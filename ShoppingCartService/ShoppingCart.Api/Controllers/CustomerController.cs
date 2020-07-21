@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using ShoppingCart.DataAccess.Model;
+using ShoppingCart.Common.Models;
 using ShoppingCart.DataAccess.Repository;
 
 namespace ShoppingCart.Api.Controllers
@@ -9,8 +9,8 @@ namespace ShoppingCart.Api.Controllers
     [ApiController]
     public class CustomerController : Controller
     {
-        private readonly IRepository<Customer> _customer;
-        public CustomerController(IRepository<Customer> customer)
+        private readonly IRepository<CustomerModel> _customer;
+        public CustomerController(IRepository<CustomerModel> customer)
         {
             _customer = customer;
         }
@@ -20,7 +20,7 @@ namespace ShoppingCart.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("/api/getcustomer")]
-        public IEnumerable<Customer> Get()
+        public IEnumerable<CustomerModel> Get()
         {
             var result = _customer.GetAll();
             return result;
@@ -32,7 +32,7 @@ namespace ShoppingCart.Api.Controllers
         /// <param name="customer"></param>
         /// <returns></returns>
         [HttpPost("/api/addcustomer")]
-        public ActionResult<IEnumerable<Customer>> AddCustomer(Customer customer)
+        public ActionResult<IEnumerable<CustomerModel>> AddCustomer(CustomerModel customer)
         {
             _customer.Insert(customer);
             return Ok(customer);

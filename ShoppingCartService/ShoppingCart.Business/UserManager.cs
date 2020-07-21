@@ -15,7 +15,7 @@ namespace ShoppingCart.Business
     public class UserManager : IUserManager
     {
         // users hardcoded for simplicity, store in a db with hashed passwords in production applications
-        private List<JwtUser> _users = new List<JwtUser>
+        private readonly List<JwtUser> _users = new List<JwtUser>
         {
             new JwtUser { Id = 1, FirstName = "Test", LastName = "User", Username = "test", Password = "test" }
         };

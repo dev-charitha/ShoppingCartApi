@@ -1,29 +1,36 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using ShoppingCart.Common.Model;
 using ShoppingCart.DataAccess.Context;
-using ShoppingCart.DataAccess.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace ShoppingCart.DataAccess.Repository
 {
-    public class CategoryRepository : IRepository<Category>
+    public class CategoryRepository : IRepository<CategoryModel>
     {
-        public IEnumerable<Category> GetAll()
+        private readonly IMapper _mapper;
+        public CategoryRepository(IMapper mapper)
+        {
+            _mapper = mapper;
+        }  
+        public IEnumerable<CategoryModel> GetAll()
         {
             using (var context = new ShoppingCartDbContext())
             {
-                return context.Category.Include(a=> a.Product).ToList();
-            
+                var result = context.Category.Include(a => a.Product).ToList();
+                return _mapper.Map<List<CategoryModel>>(result);
+
             }
         }
 
-        public Category GetById(object id)
+        public CategoryModel GetById(object id)
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(Category obj)
+        public void Insert(CategoryModel obj)
         {
             throw new NotImplementedException();
         }
@@ -33,7 +40,7 @@ namespace ShoppingCart.DataAccess.Repository
             throw new NotImplementedException();
         }
 
-        public void Update(Category obj)
+        public void Update(CategoryModel obj)
         {
             throw new NotImplementedException();
         }

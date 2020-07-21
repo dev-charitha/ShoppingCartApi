@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
+using System;
 
-namespace ShoppingCart.DataAccess.Model
+namespace ShoppingCart.Common.Models
 {
-    public class Customer
+    public class CustomerModel : UserModel
     {
-        public int Id  { get; set; }
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
         public string HouseNo { get; set; }
         public string Street { get; set; }
         public string City { get; set; }
-        public string PostalCode { get; set; }
         public bool IsActive { get; set; }
         public DateTime CreatedDate { get; set; }
-        public virtual User User { get; set; }
-
+        public virtual UserModel User { get; set; }
     }
 }

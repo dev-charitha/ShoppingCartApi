@@ -1,41 +1,45 @@
 ﻿
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using ShoppingCart.Common.Model;
 using ShoppingCart.DataAccess.Context;
-using ShoppingCart.DataAccess.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace ShoppingCart.DataAccess.Repository
 {
-    public class ProductRepository : IProductRepository<Product>
+    public class ProductRepository : IProductRepository<ProductModel>
     {
-        public IEnumerable<Product> GetAll()
+        private readonly IMapper _mapper;
+        public ProductRepository(IMapper mapper)
+        {
+            _mapper = mapper;
+        }
+        public IEnumerable<ProductModel> GetAll()
         {
             using (var context = new ShoppingCartDbContext())
             {
-                var test = context.Product.Include(p => p.Category).Where(a=> a.IsActive).ToList();
-                
-                return test;
-
+                var result = context.Product.Include(p => p.Category).Where(a=> a.IsActive).ToList();
+                return _mapper.Map<List<ProductModel>>(result);
             }
         }
 
-        public IEnumerable<Product> GetProductByCategoryId(int id)
+        public IEnumerable<ProductModel> GetProductByCategoryId(int id)
         {
             using (var context = new ShoppingCartDbContext())
             {
-                var test = context.Product.Include(p => p.Category).Where(b=> b.Category.Id==id).ToList();
-                return test;
+                var result = context.Product.Include(p => p.Category).Where(b=> b.Category.Id==id).ToList();
+                return _mapper.Map<List<ProductModel>>(result);
             }
         }
 
-        public Product GetById(object id)
+        public ProductModel GetById(object id)
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(Product obj)
+        public void Insert(ProductModel obj)
         {
             throw new NotImplementedException();
         }
@@ -45,7 +49,7 @@ namespace ShoppingCart.DataAccess.Repository
             throw new NotImplementedException();
         }
 
-        public void Update(Product obj)
+        public void Update(ProductModel obj)
         {
             throw new NotImplementedException();
         }

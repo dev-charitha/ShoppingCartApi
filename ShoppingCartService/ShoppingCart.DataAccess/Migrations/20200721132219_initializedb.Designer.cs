@@ -10,8 +10,8 @@ using ShoppingCart.DataAccess.Context;
 namespace ShoppingCart.DataAccess.Migrations
 {
     [DbContext(typeof(ShoppingCartDbContext))]
-    [Migration("20200715162756_initialize")]
-    partial class initialize
+    [Migration("20200721132219_initializedb")]
+    partial class initializedb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,7 +21,7 @@ namespace ShoppingCart.DataAccess.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ShoppingCart.DataAccess.Model.Category", b =>
+            modelBuilder.Entity("ShoppingCart.DataAccess.Entities.CategoryEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -45,7 +45,7 @@ namespace ShoppingCart.DataAccess.Migrations
                     b.ToTable("Category");
                 });
 
-            modelBuilder.Entity("ShoppingCart.DataAccess.Model.Customer", b =>
+            modelBuilder.Entity("ShoppingCart.DataAccess.Entities.CustomerEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -73,9 +73,6 @@ namespace ShoppingCart.DataAccess.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PostalCode")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Street")
                         .HasColumnType("nvarchar(max)");
 
@@ -89,7 +86,7 @@ namespace ShoppingCart.DataAccess.Migrations
                     b.ToTable("Customer");
                 });
 
-            modelBuilder.Entity("ShoppingCart.DataAccess.Model.Product", b =>
+            modelBuilder.Entity("ShoppingCart.DataAccess.Entities.ProductEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -97,9 +94,6 @@ namespace ShoppingCart.DataAccess.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int?>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CategoryRefId")
                         .HasColumnType("int");
 
                     b.Property<int>("CreatedBy")
@@ -139,7 +133,7 @@ namespace ShoppingCart.DataAccess.Migrations
                     b.ToTable("Product");
                 });
 
-            modelBuilder.Entity("ShoppingCart.DataAccess.Model.User", b =>
+            modelBuilder.Entity("ShoppingCart.DataAccess.Entities.UserEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -157,16 +151,16 @@ namespace ShoppingCart.DataAccess.Migrations
                     b.ToTable("User");
                 });
 
-            modelBuilder.Entity("ShoppingCart.DataAccess.Model.Customer", b =>
+            modelBuilder.Entity("ShoppingCart.DataAccess.Entities.CustomerEntity", b =>
                 {
-                    b.HasOne("ShoppingCart.DataAccess.Model.User", "User")
-                        .WithMany("Product")
+                    b.HasOne("ShoppingCart.DataAccess.Entities.UserEntity", "User")
+                        .WithMany("Customer")
                         .HasForeignKey("UserId");
                 });
 
-            modelBuilder.Entity("ShoppingCart.DataAccess.Model.Product", b =>
+            modelBuilder.Entity("ShoppingCart.DataAccess.Entities.ProductEntity", b =>
                 {
-                    b.HasOne("ShoppingCart.DataAccess.Model.Category", "Category")
+                    b.HasOne("ShoppingCart.DataAccess.Entities.CategoryEntity", "Category")
                         .WithMany("Product")
                         .HasForeignKey("CategoryId");
                 });

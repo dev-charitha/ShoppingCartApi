@@ -1,16 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using ShoppingCart.DataAccess.Model;
+using ShoppingCart.DataAccess.Entities;
 using System;
 
 namespace ShoppingCart.DataAccess.Context
 {
     public class ShoppingCartDbContext : DbContext
     {
-        public DbSet<Category> Category { get; set; }
-        public DbSet<Product> Product { get; set; }
-        public DbSet<Customer> Customer { get; set; }
-        public DbSet<User> User { get; set; }
+        public DbSet<CategoryEntity> Category { get; set; }
+        public DbSet<ProductEntity> Product { get; set; }
+        public DbSet<CustomerEntity> Customer { get; set; }
+        public DbSet<UserEntity> User { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

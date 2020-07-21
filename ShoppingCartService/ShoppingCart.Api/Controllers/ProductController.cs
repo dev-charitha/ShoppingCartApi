@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShoppingCart.Business.Interfaces;
-using ShoppingCart.DataAccess.Model;
+using ShoppingCart.Common.Model;
 using ShoppingCart.DataAccess.Repository;
 using System.Collections.Generic;
 using System.Text.Json;
@@ -11,9 +11,9 @@ namespace ShoppingCart.Api.Controllers
     [ApiController]
     public class ProductController : Controller
     {
-        private readonly IProductRepository<Product> _product;
+        private readonly IProductRepository<ProductModel> _product;
         private readonly IProductManager _productmanager;
-        public ProductController(IProductRepository<Product> category, IProductManager productmanager)
+        public ProductController(IProductRepository<ProductModel> category, IProductManager productmanager)
         {
             _product = category;
             _productmanager = productmanager;
@@ -24,7 +24,7 @@ namespace ShoppingCart.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("/api/getproduct")]
-        public IEnumerable<Product> Get()
+        public IEnumerable<ProductModel> Get()
         {
             var result = _product.GetAll();
             return result;
@@ -36,7 +36,7 @@ namespace ShoppingCart.Api.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("/api/getproductbycategory/{id}")]
-        public IEnumerable<Product> GetProductByCategory(int id)
+        public IEnumerable<ProductModel> GetProductByCategory(int id)
         {
             return _product.GetProductByCategoryId(id);
         }

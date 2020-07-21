@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -8,7 +9,8 @@ using ShoppingCart.Api.Extensions;
 using ShoppingCart.Business;
 using ShoppingCart.Business.Helpers;
 using ShoppingCart.Business.Interfaces;
-using ShoppingCart.DataAccess.Model;
+using ShoppingCart.Common.Model;
+using ShoppingCart.Common.Models;
 using ShoppingCart.DataAccess.Repository;
 
 namespace ShoppingCart.Api
@@ -31,10 +33,10 @@ namespace ShoppingCart.Api
             );
 
             services.AddControllers();
-            services.AddSingleton<IRepository<Category>, CategoryRepository>();
-            services.AddSingleton<IProductRepository<Product>, ProductRepository>();
+            services.AddSingleton<IRepository<CategoryModel>, CategoryRepository>();
+            services.AddSingleton<IProductRepository<ProductModel>, ProductRepository>();
             services.AddSingleton<IProductManager, ProductManager>();
-            services.AddSingleton<IRepository<Customer>, CustomerRepository>();
+            services.AddSingleton<IRepository<CustomerModel>, CustomerRepository>();
             services.AddCors();
 
             // configure strongly typed settings object
@@ -42,13 +44,19 @@ namespace ShoppingCart.Api
 
             // configure DI for application services
             services.AddScoped<IUserManager, UserManager>();
+
+            services.AddAutoMapper(typeof(CategoryRepository));
+            services.AddAutoMapper(typeof(ProductRepository));
+            services.AddAutoMapper(typeof(CustomerRepository));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILogger logger)
         {
 
-            if (env.IsDevelopment())
+            if (env.IsDevelopment(
+                ))
             {
                 app.UseDeveloperExceptionPage();
             }

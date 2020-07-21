@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ShoppingCart.DataAccess.Migrations
 {
-    public partial class initialize : Migration
+    public partial class initializedb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -53,7 +53,6 @@ namespace ShoppingCart.DataAccess.Migrations
                     IsActive = table.Column<bool>(nullable: false),
                     CreatedBy = table.Column<int>(nullable: false),
                     CreatedDate = table.Column<DateTime>(nullable: false),
-                    CategoryRefId = table.Column<int>(nullable: false),
                     CategoryId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
@@ -79,7 +78,6 @@ namespace ShoppingCart.DataAccess.Migrations
                     HouseNo = table.Column<string>(nullable: true),
                     Street = table.Column<string>(nullable: true),
                     City = table.Column<string>(nullable: true),
-                    PostalCode = table.Column<string>(nullable: true),
                     IsActive = table.Column<bool>(nullable: false),
                     CreatedDate = table.Column<DateTime>(nullable: false),
                     UserId = table.Column<int>(nullable: true)

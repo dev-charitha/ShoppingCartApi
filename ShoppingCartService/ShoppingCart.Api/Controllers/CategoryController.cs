@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ShoppingCart.DataAccess.Model;
+using ShoppingCart.Common.Model;
 using ShoppingCart.DataAccess.Repository;
 using System.Collections.Generic;
 
@@ -9,8 +9,8 @@ namespace ShoppingCart.Api.Controllers
     [ApiController]
     public class CategoryController : Controller
     {
-        private readonly IRepository<Category> _category;
-        public CategoryController(IRepository<Category> category)
+        private readonly IRepository<CategoryModel> _category;
+        public CategoryController(IRepository<CategoryModel> category)
         {
             _category = category;
         }
@@ -20,7 +20,7 @@ namespace ShoppingCart.Api.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("/api/getcategory")]
-        public IEnumerable<Category> Get()
+        public IEnumerable<CategoryModel> Get()
         {
             var result = _category.GetAll();
             return result;

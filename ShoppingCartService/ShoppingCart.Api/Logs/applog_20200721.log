@@ -10,3 +10,39 @@
 2020-07-21T11:34:30.1474601+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
 2020-07-21T11:34:30.2061840+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
 2020-07-21T11:34:30.2081345+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Api"
+2020-07-21T13:13:35.5373886+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-21T13:13:35.8433217+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-21T13:13:35.9131619+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-21T13:13:35.9143102+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Api"
+2020-07-21T15:09:38.2514826+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-21T15:09:38.9737240+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-21T15:09:39.0607717+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-21T15:09:39.0634460+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Api"
+2020-07-21T19:21:13.1714710+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-21T19:21:13.2827653+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-21T19:21:13.3165848+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-21T19:21:13.3186983+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Api"
+2020-07-21T19:33:21.6992732+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-21T19:33:21.7306899+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-21T19:33:21.7635359+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-21T19:33:21.7648635+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Api"
+2020-07-21T19:43:34.5899462+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-21T19:43:34.6429326+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-21T19:43:34.7466365+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-21T19:43:34.7490019+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Api"
+2020-07-21T21:04:28.1604327+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-21T21:04:28.8265291+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-21T21:04:29.0266952+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-21T21:04:29.0291511+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Api"
+2020-07-21T21:10:57.3557048+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-21T21:10:57.4398368+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-21T21:10:57.4449774+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-21T21:10:57.4458433+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Api"
+2020-07-21T21:40:52.8995215+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-21T21:40:52.9228161+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-21T21:40:52.9507705+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-21T21:40:52.9518113+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Api"
+2020-07-21T21:55:55.4385542+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-07-21T21:55:55.6692265+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
+2020-07-21T21:55:55.7323840+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-07-21T21:55:55.7334111+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\ShoppingCart\ShoppingCartApi\ShoppingCartService\ShoppingCart.Api"
