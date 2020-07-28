@@ -1,5 +1,0 @@
-2020-07-15T23:10:30.5298417+05:30 [WRN] (Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware) Failed to determine the https port for redirect.
-2020-07-15T23:10:30.4782333+05:30 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
-2020-07-15T23:10:30.9923394+05:30 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
-2020-07-15T23:10:30.9970601+05:30 [INF] (Microsoft.Hosting.Lifetime) Content root path: "C:\Users\Charitha\Documents\dev\sample\ShoppingCart\ShoppingCart.Api"
-2020-07-15T23:10:36.0293621+05:30 [ERR] () TEST

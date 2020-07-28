@@ -13,7 +13,7 @@ import * as CryptoJS from 'crypto-js';
 })
 export class PageShopComponent implements OnInit {
   public categories: Category[] = [];
-  public products: Product[] = [];
+  public productsList: Product[] = [];
 
   key: string = CryptoJS.enc.Utf8.parse('8080808080808080');
   iv: string = CryptoJS.enc.Utf8.parse('8080808080808080');
@@ -35,7 +35,7 @@ export class PageShopComponent implements OnInit {
   async getproduct() {
     this.dataService.loadProducts().subscribe((data: any[]) => {
       //console.log(data);
-      this.products = data;
+      this.productsList = data;
     });
   }
 
@@ -46,7 +46,7 @@ export class PageShopComponent implements OnInit {
 
     this.dataService.loadProductsByCategory(id).subscribe((data: any[]) => {
       console.log(data);
-      this.products = data;
+      this.productsList = data;
     });
   }
 
@@ -78,7 +78,7 @@ export class PageShopComponent implements OnInit {
         });
 
         var decodedData = JSON.parse(decodeString.toString(CryptoJS.enc.Utf8));
-        this.products = decodedData.map((item: any) => ({
+        this.productsList = decodedData.map((item: any) => ({
           id: item.Id,
           name: item.Name,
           description: item.Description,

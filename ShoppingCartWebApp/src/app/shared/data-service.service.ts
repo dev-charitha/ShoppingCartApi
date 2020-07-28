@@ -77,6 +77,7 @@ export class DataServiceService {
     );
   }
 
+  //return encrypted product by category.
   public loadProductsByCategoryId(id: any) {
     return this.httpClient.get<any>(
       this.REST_API_SERVER + '/getproductbycategoryid/' + id

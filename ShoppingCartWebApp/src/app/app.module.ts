@@ -12,6 +12,12 @@ import { PageHeaderComponent } from './page-header/page-header.component';
 import { PageFooterComponent } from './page-footer/page-footer.component';
 import { PageHomeComponent } from './page-home/page-home.component';
 import { PageRegisterComponent } from './page-register/page-register.component';
+import { PageLoginComponent } from './page-login/page-login.component';
+import { HomeComponent } from './home/home.component';
+import { ToastrModule } from 'ngx-toastr';
+import { CartComponent } from './page-shop/cart/cart.component';
+import { CartItemComponent } from './page-shop/cart/cart-item/cart-item.component';
+import { ProductItemComponent } from './page-shop/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +27,11 @@ import { PageRegisterComponent } from './page-register/page-register.component';
     PageFooterComponent,
     PageHomeComponent,
     PageRegisterComponent,
+    PageLoginComponent,
+    HomeComponent,
+    CartComponent,
+    CartItemComponent,
+    ProductItemComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +39,7 @@ import { PageRegisterComponent } from './page-register/page-register.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [DataServiceService],
   bootstrap: [AppComponent],

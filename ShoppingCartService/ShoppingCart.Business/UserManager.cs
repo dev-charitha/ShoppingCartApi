@@ -35,7 +35,7 @@ namespace ShoppingCart.Business
             if (user == null) return null;
 
             // authentication successful so generate jwt token
-            var token = generateJwtToken(user);
+            var token = GenerateJwtToken(user);
 
             return new AuthenticateResponse(user, token);
         }
@@ -52,7 +52,7 @@ namespace ShoppingCart.Business
 
         // helper methods
 
-        private string generateJwtToken(JwtUser user)
+        private string GenerateJwtToken(JwtUser user)
         {
             // generate token that is valid for 7 days
             var tokenHandler = new JwtSecurityTokenHandler();

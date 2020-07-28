@@ -7,8 +7,8 @@ namespace ShoppingCart.Common
 {
     public static class DataEncryptionHandler
     {
-        private static byte[] keyBytes = Encoding.UTF8.GetBytes("8080808080808080");
-        private static byte[] iv = Encoding.UTF8.GetBytes("8080808080808080");
+        private static readonly byte[] keyBytes = Encoding.UTF8.GetBytes("8080808080808080");
+        private static readonly byte[] iv = Encoding.UTF8.GetBytes("8080808080808080");
         public static string DecryptStringAES(string cipherText)
         {
             byte[] encrypted = Convert.FromBase64String(cipherText);

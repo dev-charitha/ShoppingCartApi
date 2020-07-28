@@ -26,12 +26,12 @@ namespace ShoppingCart.Business.Helpers
             var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
 
             if (token != null)
-                attachUserToContext(context, usermanager, token);
+                AttachUserToContext(context, usermanager, token);
 
             await _next(context);
         }
 
-        private void attachUserToContext(HttpContext context, IUserManager usermanager, string token)
+        private void AttachUserToContext(HttpContext context, IUserManager usermanager, string token)
         {
             try
             {
@@ -55,6 +55,7 @@ namespace ShoppingCart.Business.Helpers
             }
             catch
             {
+                throw;
                 // do nothing if jwt validation fails
                 // user is not attached to context so request won't have access to secure routes
             }
